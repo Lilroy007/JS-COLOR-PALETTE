@@ -54,3 +54,8 @@ bleu.addEventListener('input', function() {
     couleur.style.backgroundColor = 'rgb(' + rouge.value + ',' + vert.value + ',' + bleu.value + ')';
 });
 
+// Fonctions
+function changeCouleur(monSlider, monChampTexte) { // Je déclare une fonction changeCouleur
+    monChampTexte.value = monSlider.value; // Je récupère la valeur du slider et je l'applique au champ texte
+    couleur.style.backgroundColor = 'rgb(' + rouge.value + ',' + vert.value + ',' + bleu.value + ')';
+}
